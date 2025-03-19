@@ -1,0 +1,75 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .summary-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .summary-card {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.8), rgba(0, 204, 204, 0.8));
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+  }
+  
+  .summary-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .summary-card p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .charts-and-transactions {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .pie-chart-container,
+  .recent-transactions {
+    width: 48%;  
+  }
+  
+  .pie-chart-container h3,
+  .recent-transactions h3 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .recent-transactions th,
+  .recent-transactions td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .recent-transactions th {
+     background: linear-gradient(135deg, rgba(0, 102, 204, 0.8), rgba(0, 204, 204, 0.8));
+  }
+  
+  .recent-transactions td {
+    font-size: 14px;
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.8), rgba(0, 204, 204, 0.8));
+  }
+  
+  .pie-chart-container {
+    height: 10px;
+  }
+  
