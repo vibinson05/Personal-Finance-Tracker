@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Finance Tracker
 
-## Getting Started
+A personal finance management solution to track your transactions, manage budgets, and analyze your spending.
 
-First, run the development server:
+## Technologies Used
+- **Next.js**: React framework for building the app.
+- **Shadcn/UI**: For UI components.
+- **Styled-components**: For styling the components.
+- **React Icons**: For using vector icons in the UI.
+- **MySQL**: For storing transactions and budget data.
+- **MongoDB (optional)**: For database management (if used).
 
-```bash
+## Features
+- Track transactions.
+- View monthly expenses.
+- Compare budget vs actual spending.
+- Category-wise analysis.
+- Simple spending insights.
+- Mobile responsive design with a clean user interface.
+
+## Installation
+
+1. Clone the repository:
+
+git clone https://github.com/vibinson05/Personal-Finance-Tracker.git
+
+2. Navigate to the project folder:
+
+cd finance-tracker
+
+3. Install dependencies:
+
+npm install
+
+4. Set up environment variables:
+
+Create a .env.local file in the root directory and configure the database connection with MySQL.
+
+Example:
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=password
+DB_NAME=finance_tracker
+
+5. Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open your browser and go to http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+7. API Endpoints
+   
+GET /api/transactions: Fetch all transactions from the database.
+POST /api/transactions: Add a new transaction to the database.
+PUT /api/transactions/{id}: Update an existing transaction.
+DELETE /api/transactions/{id}: Delete a transaction from the database.
+GET /api/monthly-expenses: Fetch monthly expense data for the user.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+8. UI Components
+   
+Sidebar: Navigation menu with links to different sections of the app.
+Links: Transactions, Monthly Expenses, Budget Comparison, Categorywise.
+Styled using Shadcn/UI and styled-components for a seamless and responsive experience.
+Transaction List: Displays a list of transactions with options to add, edit, or delete entries.
+Budget Comparison: Shows a graphical comparison between the budgeted and actual spending, helping users keep track of their finances.
+Insights: Displays graphical insights into overall spending and budgeting.
 
-## Learn More
+9. Styles
+Global styles are applied using styled-components and Shadcn/UI for component-level styling.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
